@@ -1,0 +1,77 @@
+#include<iostream>
+using namespace std;
+#include<graphics.h>
+
+class pixel
+{
+	int x,X,y,Y;
+
+public:
+	
+	void divide();
+
+	void get_coordinates()
+	{
+		int x1,y1,x2,y2;
+		
+		cout<<"ENTER THE RESPECTED VALUES!"<<endl;	
+		cout<<"x1: ";
+		cin>>x1;
+		cout<<endl;
+		cout<<"x2: ";
+		cin>>x2;
+		cout<<endl;
+		cout<<"y1: ";
+		cin>>y1;
+		cout<<endl;
+		cout<<"y2: ";
+		cin>>y2;
+		cout<<endl;
+	}		
+};
+
+class line::public pixel
+{
+	float x,y,dx,dy,length;
+
+public:
+
+	dda_algo()
+	{
+		
+
+};
+
+void pixel::divide()
+{
+	int x=getmaxx();
+	cout<<"X- AXIS:	"<<x<<endl;
+
+	int X=x/2;
+	cout<<"MIDPT OF X- AXIS: "<<X<<endl;
+
+	int y=getmaxy();
+	cout<<"Y-AXIS: "<<y<<endl;
+
+	int Y=y/2;
+	cout<<"MIDPT OF Y- AXIS: "<<Y<<endl;
+
+	line(X,0,X,y);
+
+	line(0,Y,x,Y);
+
+	delay(9000);
+	closegraph();
+}
+
+
+int main()
+{
+	pixel p1;
+	
+	int gm, gd=DETECT;
+    
+	initgraph(&gm,&gd,NULL);
+	p1.divide();
+	return 0;
+}
